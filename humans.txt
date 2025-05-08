@@ -1,0 +1,22 @@
+/* TEAM */
+Design & Coding: Eric Sorum
+Contact: ejsorum@gmail.com
+From: Minneapolis, MN
+
+/* Clipart */
+Team: Many Pixels
+Website: https://www.manypixels.co/gallery
+
+/* ICONS */ 
+Tea,: Bootstrap
+Websote: https://icons.getbootstrap.com/
+
+/* LARGE IMAGES */ 
+Team: PNG Tree
+Sources:
+https://pngtree.com/freepng/2-5d-business-office-data_4115599.html
+https://pngtree.com/freepng/flat-office-business-in-a-meeting_4199994.html
+
+/* Inspired by this landing page: */
+
+https://saaslandingpage.com/finta/
