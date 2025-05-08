@@ -9,7 +9,7 @@ Website: https://www.manypixels.co/gallery
 
 /* ICONS */ 
 Tea,: Bootstrap
-Websote: https://icons.getbootstrap.com/
+Website: https://icons.getbootstrap.com/
 
 /* LARGE IMAGES */ 
 Team: PNG Tree
