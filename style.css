@@ -40,6 +40,9 @@ ul, li {
 .blue {
   color: rgba(38, 121, 243, 1);
 }
+.green {
+  color: rgb(0, 203, 0);
+}
 
 .blue-gradient {
   background: linear-gradient(
