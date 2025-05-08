@@ -1,8 +1,12 @@
-.centered, header, section, footer {
+.row {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+}
+.between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .column {
