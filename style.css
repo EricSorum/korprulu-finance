@@ -22,6 +22,10 @@
   width: 100%;
 }
 
+.gap-1 {
+  gap: 0.3rem;
+}
+
 .section-wrapper {
   width: 100%;
   max-width: 1000px;
@@ -138,19 +142,37 @@ h1 {
   border: none;
   box-shadow: 1px 1px rgba(11, 11, 11, 0.1);
   text-shadow: 1px 1px rgba(11, 11, 11, 0.1);
-  font-weight: 600;
 }
 
 .blue-button:hover {
-  background-color: rgb(36, 108, 218);
+  background-color: rgb(32, 96, 191);
 }
 .blue-button a {
   color: white;
 }
+
+.grey-button {
+  background-color: rgba(239, 239, 242, 1);
+  padding: 0.6rem 1rem;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 1px 1px rgba(11, 11, 11, 0.1);
+  text-shadow: 1px 1px rgba(11, 11, 11, 0.1);
+}
+
+.grey-button:hover {
+  background-color: rgb(224, 224, 227);
+}
+
+
 a {
   text-decoration: none;
   color: black;
 }
 a:hover:not(.blue-button a) {
   color: rgba(90, 90, 90, 1);
+}
+
+a, button {
+  transition: all 0.3s ease-in-out;
 }
