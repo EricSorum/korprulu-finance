@@ -179,10 +179,13 @@ h1 {
   --dark-text: rgb(60, 60, 60);
 }
 
-.grey-button:hover, .blue-button:hover, a:hover:not(.blue-button a) {
-  filter: brightness(0.8);
+.grey-button:hover, .blue-button:hover {
+  filter: brightness(0.87);
 }
 
+a:hover:not(.blue-button a):not(.grey-button a):not(.home-link) {
+  filter: brightness(2);
+}
 
 a, button {
   transition: all 0.3s ease-in-out;
