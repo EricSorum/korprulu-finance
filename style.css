@@ -1,4 +1,18 @@
 
+:root {
+  --grey-button: rgba(239, 239, 242, 1);
+  --blue-background: rgba(32, 96, 191, 1);
+  --blue-button: rgba(38, 121, 243, 1);
+  --dark-text: rgb(60, 60, 60);
+  --blue-text: rgba(38, 121, 243, 1);
+  --green-text: rgb(0, 203, 0);
+  --dark-shadow: rgba(11, 11, 11, 0.1);
+  --grey-background: rgba(239, 239, 242, 1);
+  --grey-text: rgba(140, 140, 140, 1);
+  --blue-gradient: rgba(141, 185, 252, 0.4);
+  --white-gradient: 255, 255, 255,
+}
+
 /********** Layout **********/
 
 .row {
@@ -120,34 +134,26 @@ h1 {
 }
 .small-text {
   font-size: 0.7rem;
-  color: rgba(140, 140, 140, 1)
+  color: var(--grey-text);
 }
 /********** Colors **********/
 
 .blue {
-  color: rgba(38, 121, 243, 1);
+  color: var(--blue-text);
 }
 .green {
-  color: rgb(0, 203, 0);
+  color: var(--green-text);
 }
 
 .blue-gradient {
   background: 
-  linear-gradient(135deg, rgba(141, 185, 252, 0.4), rgba(255, 255, 255, 0) 30%),
-  linear-gradient(215deg, rgba(141, 185, 252, 0.4), rgba(255, 255, 255, 0) 30%),
-  linear-gradient(
-    rgba(255, 255, 255, 0.8) 1%, 
-    rgba(141, 185, 252, 0.4) 50%,
-    rgba(255, 255, 255, 0.8) 99%
-  );
+  linear-gradient(135deg, var(--blue-gradient), rgba(var(--white-gradient) 0) 30%),
+  linear-gradient(215deg, var(--blue-gradient), rgba(var(--white-gradient) 0) 30%),
+  linear-gradient(rgba(var(--white-gradient) 0.8) 1%, var(--blue-gradient) 50%, rgba(var(--white-gradient) 0.8) 99%);
 }
 
 .grey-background {
-  background-color: rgba(239, 239, 242, 1);
-}
-
-.dark {
-  color: rgba(32, 32, 32, 1);
+  background-color: var(--grey-background);
 }
 
 /********** Buttons **********/
@@ -156,8 +162,8 @@ h1 {
   padding: 0.4rem 1rem;
   border-radius: 12px;
   border: none;
-  box-shadow: 1px 1px rgba(11, 11, 11, 0.1);
-  text-shadow: 1px 1px rgba(11, 11, 11, 0.1);
+  box-shadow: 1px 1px var(--dark-shadow);
+  text-shadow: 1px 1px var(--dark-shadow);
 }
 .blue-button {
   background-color: var(--blue-button);
@@ -172,12 +178,7 @@ h1 {
   background-color: var(--grey-button);
 }
 
-:root {
-  --grey-button: rgba(239, 239, 242, 1);
-  --blue-background: rgba(32, 96, 191, 1);
-  --blue-button: rgba(38, 121, 243, 1);
-  --dark-text: rgb(60, 60, 60);
-}
+
 
 .grey-button:hover, .blue-button:hover {
   filter: brightness(0.87);
@@ -189,4 +190,10 @@ a:hover:not(.blue-button a):not(.grey-button a):not(.home-link) {
 
 a, button {
   transition: all 0.3s ease-in-out;
+}
+
+/********** Tables **********/
+
+tr:hover {
+
 }
