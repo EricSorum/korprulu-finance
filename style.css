@@ -10,7 +10,8 @@
   --grey-background: rgba(239, 239, 242, 1);
   --grey-text: rgba(140, 140, 140, 1);
   --blue-gradient: rgba(141, 185, 252, 0.4);
-  --white-gradient: 255, 255, 255,
+  --white-gradient: 255, 255, 255,;
+  --border-radius: 12px;
 }
 
 /********** Layout **********/
@@ -194,6 +195,23 @@ a, button {
 
 /********** Tables **********/
 
-tr:hover {
+table {
+  padding: 1rem;
+  border-collapse: collapse;
+  border: 1px solid var(--dark-shadow);
+  border-radius: var(--border-radius);
+}
 
+td, th {
+  border-collapse: collapse;
+  border-bottom: 1px solid var(--dark-shadow);
+  padding: 0.5rem;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+th {
+  text-align: left;
 }
