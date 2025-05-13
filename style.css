@@ -56,6 +56,15 @@
   /* padding: 4rem; */
 }
 
+.gap-half {
+  gap: 0.5rem;
+}
+
+.relative {
+  position: relative;
+  bottom: 1rem;
+}
+
 /********** Spacing **********/
 
 
@@ -77,9 +86,9 @@
   padding-top: 1rem;
 }
 
-.top {
+/* .top {
   height: 100vh;
-}
+} */
 body {
   margin: 0;
 }
