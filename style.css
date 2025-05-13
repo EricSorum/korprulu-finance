@@ -33,6 +33,12 @@
   justify-content: space-between;
 }
 
+.around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .column, header, section, footer {
   display: flex;
   flex-direction: column;
@@ -61,7 +67,9 @@
   width: 50%;
 }
 
-
+.w-fit {
+  width: fit-content;
+}
 .section-wrapper {
   width: 100%;
   max-width: 1000px;
@@ -76,12 +84,16 @@ body {
   margin: 0;
 }
 
-.m-8 {
-  margin: 8px;
+.m-3 {
+  margin: 3rem;
 }
 
 .mt-2 {
   margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
 }
 
 .m-auto {
