@@ -73,6 +73,10 @@
   bottom: 0;
 }
 
+.end {
+  justify-content: flex-end;
+}
+
 /********** Spacing **********/
 
 
@@ -80,9 +84,9 @@
   width: 100%;
 }
 
-.w-50 {
+/* .w-50 {
   width: 50%;
-}
+} */
 
 .w-fit {
   width: fit-content;
@@ -94,6 +98,10 @@
   padding-top: 1rem;
 }
 
+section {
+  margin-bottom: 1.5rem;
+}
+
 body {
   margin: 0;
 }
@@ -102,8 +110,14 @@ body {
   margin: 3rem;
 }
 
-.mt-2 {
+.mtb-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mtb-2 {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-2 {
