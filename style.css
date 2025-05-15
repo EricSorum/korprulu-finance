@@ -303,3 +303,7 @@ th {
   border-radius: 50%;
   padding-right: 0.5rem;
 }
+
+.check-img {
+  max-width: 100%;
+}
