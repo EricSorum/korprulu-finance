@@ -274,7 +274,7 @@ th {
   text-align: left;
 }
 
-/********** Tables **********/
+/********** Ticker **********/
 
 .ticker {
   padding: 0 12px;
@@ -285,7 +285,7 @@ th {
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 46s linear infinite;
+  animation: ticker 46s linear infinite;
   display: inline-block;
 }
 
@@ -295,7 +295,7 @@ th {
   height: 1.5rem;
 }
 
-@keyframes marquee {
+@keyframes ticker {
   0% {
     transform: translate(0, 0);
   }
@@ -303,15 +303,6 @@ th {
     transform: translate(-50%, 0);
     /* changed from 100% */
   }
-}
-
-.sass-img {
-  box-shadow: 
-    0px 0px 0px 1px rgba(30, 31, 37, 0.04),
-    0px 8px 4px 0px rgba(30, 31, 37, 0.08),
-    0px 26px 33px -13px rgba(30, 31, 37, 0.10),
-    0px 6px 54px 0px rgba(30, 31, 37, 0.06),
-    0px 10px 8px -9px rgba(30, 31, 37, 0.15)
 }
 
 /********** Images **********/
@@ -324,4 +315,32 @@ th {
 
 .check-img {
   max-width: 100%;
+}
+
+.sass-img {
+  box-shadow: 
+    0px 0px 0px 1px rgba(30, 31, 37, 0.04),
+    0px 8px 4px 0px rgba(30, 31, 37, 0.08),
+    0px 26px 33px -13px rgba(30, 31, 37, 0.10),
+    0px 6px 54px 0px rgba(30, 31, 37, 0.06),
+    0px 10px 8px -9px rgba(30, 31, 37, 0.15)
+}
+
+/********** Circle **********/
+
+.x-icon {
+  animation: circle 5s linear infinite;
+}
+
+.y-icon {
+
+}
+
+@keyframes circle {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
 }
