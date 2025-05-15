@@ -45,6 +45,11 @@
   align-items: center;
 }
 
+.column-left {
+  display: flex;
+  flex-direction: column;
+}
+
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -62,6 +67,10 @@
 
 .relative {
   position: relative;
+}
+
+.bottom-0 {
+  bottom: 0;
 }
 
 /********** Spacing **********/
@@ -285,4 +294,12 @@ th {
     0px 26px 33px -13px rgba(30, 31, 37, 0.10),
     0px 6px 54px 0px rgba(30, 31, 37, 0.06),
     0px 10px 8px -9px rgba(30, 31, 37, 0.15)
+}
+
+/********** Images **********/
+
+.portrait {
+  height: 48px;
+  border-radius: 50%;
+  padding-right: 0.5rem;
 }
