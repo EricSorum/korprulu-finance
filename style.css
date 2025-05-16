@@ -329,18 +329,27 @@ th {
 /********** Circle **********/
 
 .x-icon {
-  animation: circle 5s linear infinite;
+  animation: x-circle 5s infinite linear;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .y-icon {
-
+  animation: y-circle 5s infinite cubic-bezier(0.5, 1, 1, 1);
+  height: 100px;
 }
 
-@keyframes circle {
-  0% {
-    transform: translate(0, 0);
-  }
+@keyframes x-circle {
   100% {
-    transform: translate(100%, 0);
+    transform: translateX(100px);
+  }
+}
+
+@keyframes y-circle {
+  100% {
+    transform: translateY(-100px);
   }
 }
