@@ -182,8 +182,6 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
 .text-center {
@@ -338,7 +336,7 @@ th {
 }
 
 .y-icon {
-  animation: y-circle 5s infinite cubic-bezier(0.5, 1, 1, 1);
+  animation: y-circle 5s infinite cubic-bezier(0.33, 0.66, 1, 1);
   height: 100px;
 }
 
