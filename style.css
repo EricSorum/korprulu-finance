@@ -203,6 +203,10 @@ h2 {
   color: var(--green-text);
 }
 
+.white {
+  color: white;
+}
+
 .blue-gradient {
   background: 
   linear-gradient(135deg, var(--blue-gradient), rgba(var(--white-gradient) 0) 30%),
@@ -326,12 +330,20 @@ th {
 
 /********** Dark Section **********/
 
-.dark-section {
-  background: radial-gradient(
-    83.87% 100% at 50% 9.62%, rgba(255, 255, 255, 0)62.02%,
-
-  )
+.dark-background {
+  background: radial-gradient(83.87% 100% at 50% 9.62%,#fff0 62.02%,#ffffff1a 91.35%),#202020;
+  max-height: 416px;
+  border-radius: var(--border-radius);
 }
+
+.dark-svg {
+  height: 400px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+
 
 /********** Circle **********/
 
