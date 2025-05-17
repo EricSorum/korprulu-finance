@@ -332,18 +332,23 @@ th {
 
 .dark-background {
   background: radial-gradient(83.87% 100% at 50% 9.62%,#fff0 62.02%,#ffffff1a 91.35%),#202020;
-  max-height: 416px;
+  background-image: url("assets/dark-background.svg");
+  height: 416px;
+  width: 100%;
+  max-width: 1000px;
   border-radius: var(--border-radius);
+  position: relative;
 }
 
 .dark-svg {
-  height: 400px;
+  /* height: 400px; */
+  /* background-image: url("assets/dark-background.svg"); */
   position: absolute;
-  top: 16px;
+  top: -60px;
   left: 16px;
+  /* z-index: 5; */
+
 }
-
-
 
 /********** Circle **********/
 
@@ -356,6 +361,7 @@ th {
   animation: x-circle 5s infinite linear;
   height: 48px;
   width:48px;
+  position: absolute;
   /* position: absolute;
   left: 50%;
   bottom: 50%; */
@@ -384,3 +390,8 @@ th {
   }
 }
 
+.circle-left .y-icon:nth-child(3),
+.circle-left .x-icon:nth-child(3)
+ {
+  animation-delay: -7.5s, -7.5s;
+}

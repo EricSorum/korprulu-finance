@@ -2,20 +2,16 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit:cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Korprulu Finance</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="korprulu-logo.png">
+  <link rel="icon" href="assets/korprulu-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="script.js"></script>
 </head>
 <body>
-  <!-- <header class="column">
-
-  </header> -->
-
   <section class="blue-gradient">
     <div class="section-wrapper">
       <header class="w-100 between">
@@ -105,8 +101,19 @@
       </div>
       <div class="circle-container w-100">
         <!--circular icon animation-->
-        <div class="y-icon">
-          <div class="x-icon"><img src="assets/circle/carta.svg" alt="Carta icon"></div>
+        <div class="circle-left">
+          <div class="y-icon">
+            <div class="x-icon"><img src="assets/circle/carta.svg" alt="Carta icon"></div>
+          </div>
+          <div class="y-icon">
+            <div class="x-icon"><img src="assets/circle/chase.svg" alt="Chase icon"></div>
+          </div>
+          <div class="y-icon">
+            <div class="x-icon"><img src="assets/circle/clerky.svg" alt="Clerky icon"></div>
+          </div>
+          <div class="y-icon">
+            <div class="x-icon"><img src="assets/circle/gusto.svg" alt="Gusto icon"></div>
+          </div>
         </div>
       </div>
       <div>
@@ -121,45 +128,8 @@
       </div>
     </div>
   </section>
-  <section class="column">
-    <div class="section-wrapper">
-      <div class="m-auto column m-50">
-        <h2>Free your time to <span class="blue">build</span></h2>
-        <p>Your time as a founder is extremely valuable; don't waste it on emails or data entry.</p>
-        <p>Set accounting on autopilot and replace QuickBooks and manual bookkeepers.</p>
-      </div>
-      <div class="two-col">
-        <div class="">
-          <div class="row-left blue">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-ruled small-logo" viewBox="0 0 16 16">
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v4h10V2a1 1 0 0 0-1-1zm9 6H6v2h7zm0 3H6v2h7zm0 3H6v2h6a1 1 0 0 0 1-1zm-8 2v-2H3v1a1 1 0 0 0 1 1zm-2-3h2v-2H3zm0-3h2V7H3z"/>
-            </svg>
-            <h3 class="blue">Auto-categorization</h3>
-          </div>
-          <p>Transactions are automatically categorized and reconciled accurately in real-time.</p>
-        </div>
-        <div class="table-container w-fit">
-          <table>
-            <thead>
-              <tr>
-                <th score="col">Time</th>
-                <th score="col">Company</th>
-                <th score="col">Category</th>
-                <th score="col">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Just now</td><td>AirTable</td><td>Software</td><td>-$25</td></tr>
-              <tr><td>1m ago</td><td>DoorDash</td><td>Food</td><td>-$50</td></tr>
-              <tr><td>3m ago</td><td>Radisson</td><td>Categorizing...</td><td>-$200</td></tr>
-              <tr><td>3m ago</td><td>Y Combinator</td><td>Categorizing...</td><td class="green">$500</td></tr>
-              <tr><td>3m ago</td><td>Stripe</td><td>Categorizing...</td><td class="green">$15</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
+
+
 
   <section class="">
     <div class="section-wrapper grey-background">
@@ -241,9 +211,49 @@
     </div>
   </section>
 
+  <section class="column">
+    <div class="section-wrapper">
+      <div class="m-auto column m-50">
+        <h2>Free your time to <span class="blue">build</span></h2>
+        <p>Your time as a founder is extremely valuable; don't waste it on emails or data entry.</p>
+        <p>Set accounting on autopilot and replace QuickBooks and manual bookkeepers.</p>
+      </div>
+      <div class="two-col">
+        <div class="">
+          <div class="row-left blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-ruled small-logo" viewBox="0 0 16 16">
+              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v4h10V2a1 1 0 0 0-1-1zm9 6H6v2h7zm0 3H6v2h7zm0 3H6v2h6a1 1 0 0 0 1-1zm-8 2v-2H3v1a1 1 0 0 0 1 1zm-2-3h2v-2H3zm0-3h2V7H3z"/>
+            </svg>
+            <h3 class="blue">Auto-categorization</h3>
+          </div>
+          <p>Transactions are automatically categorized and reconciled accurately in real-time.</p>
+        </div>
+        <div class="table-container w-fit">
+          <table>
+            <thead>
+              <tr>
+                <th score="col">Time</th>
+                <th score="col">Company</th>
+                <th score="col">Category</th>
+                <th score="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Just now</td><td>AirTable</td><td>Software</td><td>-$25</td></tr>
+              <tr><td>1m ago</td><td>DoorDash</td><td>Food</td><td>-$50</td></tr>
+              <tr><td>3m ago</td><td>Radisson</td><td>Categorizing...</td><td>-$200</td></tr>
+              <tr><td>3m ago</td><td>Y Combinator</td><td>Categorizing...</td><td class="green">$500</td></tr>
+              <tr><td>3m ago</td><td>Stripe</td><td>Categorizing...</td><td class="green">$15</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="">
-    <div class="section-wrapper dark-background">
-      <svg class="dark-svg" width="554" height="1000" fill="none"><path stroke="url(#:S1:)" stroke-linejoin="round" stroke-opacity=".05" stroke-width="12" d="m6 659.161 370.526-217.72 171.012 100.486-370.526 217.72V1094.6L6 994.113V659.161Zm0-234.468 171.012 100.486V324.206l370.526-217.72L376.526 6 6 223.72v200.973Z"></path><path stroke="url(#:S2:)" stroke-linecap="round" stroke-opacity=".15" stroke-width="12" d="m462.032 491.683-85.506-50.243L99 604.514"></path><defs><linearGradient id=":S1:" x1="276.769" x2="276.769" y1="207.295" y2="805.916" gradientUnits="userSpaceOnUse"><stop offset=".042" stop-color="#F9F9FA" stop-opacity="0"></stop><stop offset=".164" stop-color="#F9F9FA"></stop><stop offset=".606" stop-color="#F9F9FA"></stop><stop offset=".747" stop-color="#F9F9FA" stop-opacity="0"></stop></linearGradient><linearGradient id=":S2:" x1="70" x2="447.424" y1="610.895" y2="492.924" gradientUnits="userSpaceOnUse"><stop offset=".37" stop-color="#E7E7E9"></stop><stop offset=".666" stop-color="#E7E7E9" stop-opacity="0"></stop></linearGradient></defs></svg>
+    <div class="dark-background">
+      <svg class="dark-svg" width="100%" height="100%" fill="none"><path stroke="url(#:S1:)" stroke-linejoin="round" stroke-opacity=".05" stroke-width="12" d="m6 659.161 370.526-217.72 171.012 100.486-370.526 217.72V1094.6L6 994.113V659.161Zm0-234.468 171.012 100.486V324.206l370.526-217.72L376.526 6 6 223.72v200.973Z"></path><path stroke="url(#:S2:)" stroke-linecap="round" stroke-opacity=".15" stroke-width="12" d="m462.032 491.683-85.506-50.243L99 604.514"></path><defs><linearGradient id=":S1:" x1="276.769" x2="276.769" y1="207.295" y2="805.916" gradientUnits="userSpaceOnUse"><stop offset=".042" stop-color="#F9F9FA" stop-opacity="0"></stop><stop offset=".164" stop-color="#F9F9FA"></stop><stop offset=".606" stop-color="#F9F9FA"></stop><stop offset=".747" stop-color="#F9F9FA" stop-opacity="0"></stop></linearGradient><linearGradient id=":S2:" x1="70" x2="447.424" y1="610.895" y2="492.924" gradientUnits="userSpaceOnUse"><stop offset=".37" stop-color="#E7E7E9"></stop><stop offset=".666" stop-color="#E7E7E9" stop-opacity="0"></stop></linearGradient></defs></svg>
       <div class="text-center">
         <h2 class="white">Set up in 10 minutes</h2>
         <h2>Back to building supply depots by 1:03 P.M.</h2>
