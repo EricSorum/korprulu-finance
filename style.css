@@ -324,6 +324,15 @@ th {
     0px 10px 8px -9px rgba(30, 31, 37, 0.15)
 }
 
+/********** Dark Section **********/
+
+.dark-section {
+  background: radial-gradient(
+    83.87% 100% at 50% 9.62%, rgba(255, 255, 255, 0)62.02%,
+
+  )
+}
+
 /********** Circle **********/
 
 .circle-container {
@@ -362,3 +371,4 @@ th {
     transform: translateY(-100px);
   }
 }
+
