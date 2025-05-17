@@ -390,8 +390,28 @@ th {
   }
 }
 
-.circle-left .y-icon:nth-child(3),
-.circle-left .x-icon:nth-child(3)
+.y-icon:nth-child(1),
+.y-icon:nth-child(1) .x-icon
  {
-  animation-delay: -7.5s, -7.5s;
+  animation-delay: -7.5s;
+}
+.y-icon:nth-child(2),
+.y-icon:nth-child(2) .x-icon
+ {
+  animation-delay: -6.5s;
+}
+.y-icon:nth-child(3),
+.y-icon:nth-child(3) .x-icon
+ {
+  animation-delay: -5.5s;
+}
+.y-icon:nth-child(4),
+.y-icon:nth-child(4) .x-icon
+ {
+  animation-delay: -4.5s;
+}
+.y-icon:nth-child(5),
+.y-icon:nth-child(5) .x-icon
+ {
+  animation-delay: -3.5s;
 }
