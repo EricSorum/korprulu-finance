@@ -357,15 +357,23 @@ th {
   display:flex;
   align-items: center;
 }
+
+.circle-right, .circle-left {
+  width: 50%;
+  /* height: 300px; */
+}
 .x-icon {
   animation: x-circle 5s infinite linear;
   height: 48px;
   width:48px;
   position: absolute;
-  /* position: absolute;
-  left: 50%;
-  bottom: 50%; */
-  /* transform: translate(-50%, -50%); */
+}
+.circle-right .x-icon {
+  animation: right-x-circle 5s infinite linear;
+  height: 48px;
+  width:48px;
+  position: absolute;
+  right: 500px;
 }
 
 .y-icon {
@@ -373,18 +381,21 @@ th {
 }
 
 @keyframes x-circle {
-  0% {
-    transform: translateX(0);
-  }
   100% {
     transform: translateX(500px);
   }
 }
 
-@keyframes y-circle {
+@keyframes right-x-circle {
   0% {
-    transform: translateY(0);
+    transform: translateX(500px);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes y-circle {
   100% {
     transform: translateY(-100px);
   }
