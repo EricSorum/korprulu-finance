@@ -1,4 +1,3 @@
-
 :root {
   --grey-button: rgba(239, 239, 242, 1);
   --blue-background: rgba(32, 96, 191, 1);
@@ -64,7 +63,6 @@
 .footer-top, .footer-bottom {
   width: 100%;
   max-width: 1000px;
-  /* padding: 4rem; */
 }
 
 .gap-half {
@@ -89,10 +87,6 @@
 .w-100, header, section, footer {
   width: 100%;
 }
-
-/* .w-50 {
-  width: 50%;
-} */
 
 .w-fit {
   width: fit-content;
@@ -193,9 +187,7 @@ h2 {
 .text-center {
   text-align: center;
 }
-/* .text-left {
-  text-align: left;
-} */
+
 .small-text {
   font-size: 0.7rem;
   color: var(--grey-text);
@@ -333,7 +325,6 @@ th {
 
 .dark-background {
   background: radial-gradient(83.87% 100% at 50% 9.62%,#fff0 62.02%,#ffffff1a 91.35%),#202020;
-  background-image: url("assets/dark-background.svg");
   height: 416px;
   width: 100%;
   max-width: 1000px;
@@ -342,13 +333,9 @@ th {
 }
 
 .dark-svg {
-  /* height: 400px; */
-  /* background-image: url("assets/dark-background.svg"); */
   position: absolute;
   top: -60px;
   left: 16px;
-  /* z-index: 5; */
-
 }
 
 /********** Circle **********/
@@ -373,19 +360,17 @@ th {
 
 .circle-right, .circle-left {
   width: 50%;
-  /* height: 300px; */
 }
 .x-icon {
   animation: x-circle 5s infinite linear;
   height: 48px;
   width:48px;
   position: absolute;
+  box-shadow: var(--complex-shadow);
+  border-radius: 100%;
 }
 .circle-right .x-icon {
   animation: right-x-circle 5s infinite linear;
-  height: 48px;
-  width:48px;
-  position: absolute;
   right: 500px;
 }
 
@@ -448,4 +433,16 @@ th {
 .y-icon:nth-child(5) .x-icon
  {
   animation-delay: -3.5s;
+}
+
+/********** Clock **********/
+
+.inline-colon {
+  animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
 }
