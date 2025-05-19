@@ -355,7 +355,17 @@ th {
 .circle-container {
   height: 300px;
   display:flex;
-  align-items: center;
+}
+
+.circle-logo {
+  height: 100%;
+}
+
+.circle-logo img {
+  height: 80px;
+  padding-top: 46px;
+  position: relative;
+  z-index: 5;
 }
 
 .circle-right, .circle-left {
@@ -381,6 +391,12 @@ th {
 }
 
 @keyframes x-circle {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
   100% {
     transform: translateX(500px);
   }
@@ -389,6 +405,10 @@ th {
 @keyframes right-x-circle {
   0% {
     transform: translateX(500px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
   }
   100% {
     transform: translateX(0);
