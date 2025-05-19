@@ -12,6 +12,12 @@
   --blue-gradient: rgba(141, 185, 252, 0.4);
   --white-gradient: 255, 255, 255,;
   --border-radius: 12px;
+  --complex-shadow:
+    0px 0px 0px 1px rgba(30, 31, 37, 0.04),
+    0px 8px 4px 0px rgba(30, 31, 37, 0.08),
+    0px 26px 33px -13px rgba(30, 31, 37, 0.10),
+    0px 6px 54px 0px rgba(30, 31, 37, 0.06),
+    0px 10px 8px -9px rgba(30, 31, 37, 0.15);
 }
 
 /********** Layout **********/
@@ -303,7 +309,6 @@ th {
   }
   100% {
     transform: translate(-50%, 0);
-    /* changed from 100% */
   }
 }
 
@@ -320,12 +325,8 @@ th {
 }
 
 .sass-img {
-  box-shadow: 
-    0px 0px 0px 1px rgba(30, 31, 37, 0.04),
-    0px 8px 4px 0px rgba(30, 31, 37, 0.08),
-    0px 26px 33px -13px rgba(30, 31, 37, 0.10),
-    0px 6px 54px 0px rgba(30, 31, 37, 0.06),
-    0px 10px 8px -9px rgba(30, 31, 37, 0.15)
+  border-radius: var(--border-radius);
+  box-shadow: var(--complex-shadow);
 }
 
 /********** Dark Section **********/
@@ -363,9 +364,11 @@ th {
 
 .circle-logo img {
   height: 80px;
-  padding-top: 46px;
+  top: 40px;
   position: relative;
+  border-radius: 100%;
   z-index: 5;
+  box-shadow: var(--complex-shadow);
 }
 
 .circle-right, .circle-left {
@@ -398,7 +401,7 @@ th {
     opacity: 1;
   }
   100% {
-    transform: translateX(500px);
+    transform: translateX(460px);
   }
 }
 
@@ -411,7 +414,7 @@ th {
     opacity: 1;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(40px);
   }
 }
 
