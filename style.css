@@ -65,6 +65,10 @@
   max-width: 1000px;
 }
 
+.footer-top {
+  margin-top: 1.5rem;
+}
+
 .gap-half {
   gap: 0.5rem;
 }
@@ -107,12 +111,29 @@
   padding-top: 1rem;
 }
 
-section {
-  margin-bottom: 1.5rem;
+.section-wrapper:not(section:first-child .section-wrapper) {
+  border-left: solid rgba(11, 11, 11, 0.1) 1px;
+  border-right: solid rgba(11, 11, 11, 0.1) 1px;
 }
+
+section:nth-child(2) .section-wrapper {
+  border-top: solid rgba(11, 11, 11, 0.1) 1px;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+section:nth-child(6) .section-wrapper {
+  border-bottom: solid rgba(11, 11, 11, 0.1) 1px;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
 
 body {
   margin: 0;
+}
+
+.m-3 {
+  margin: 3rem;
 }
 
 .mtb-3 {
@@ -136,6 +157,8 @@ body {
 .mb-2 {
   margin-bottom: 2rem;
 }
+
+
 
 .m-auto {
   margin-left: auto;
@@ -205,6 +228,11 @@ h2 {
   font-size: 0.7rem;
   color: var(--grey-text);
 }
+
+.home-link {
+  font-size: 1.3em;
+}
+
 /********** Colors **********/
 
 .blue {
@@ -225,8 +253,16 @@ h2 {
   linear-gradient(rgba(var(--white-gradient) 0.8) 1%, var(--blue-gradient) 50%, rgba(var(--white-gradient) 0.8) 99%);
 }
 
+section {
+  background-color: rgba(200, 200, 200, 0.05);
+}
+
 .grey-background {
   background-color: var(--grey-background);
+}
+
+.white-background {
+  background-color: white;
 }
 
 /********** Buttons **********/
@@ -322,7 +358,7 @@ th {
 .portrait {
   height: 48px;
   border-radius: 50%;
-  padding-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .check-img {
