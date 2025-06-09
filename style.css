@@ -399,7 +399,7 @@ th {
   height: 100%;
 }
 
-.circle-logo img {
+.circle-logo>img {
   height: 80px;
   top: 40px;
   position: relative;
